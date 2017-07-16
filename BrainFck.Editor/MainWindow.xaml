@@ -1,0 +1,19 @@
+﻿<Window x:Class="BrainFck.Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BrainFck.Editor"
+        mc:Ignorable="d"
+        Title="BrainFck Editor" Height="350" Width="525" MinWidth="240" MinHeight="100">
+    <Grid Background="#FFDDDDDD">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="22"/>
+        </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Right" Width="120" Content="Run" x:Name="Bt_Run" Margin="10,3" Click="Bt_Run_Click" Background="White"/>
+        <TextBox Grid.Row="1" x:Name="Tb_Code" AcceptsReturn="True" AcceptsTab="True" FontFamily="SimSun-ExtB" FontSize="14"/>
+        <TextBlock Text="BrainFck Editor" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="15,0" x:Name="Tb_Status"/>
+    </Grid>
+</Window>
